@@ -30,3 +30,10 @@ jobs:
       # Jalankan script
       - name: Run scrape.py
         run: python scrape.py
+
+      - name: Upload scraped data
+        uses: actions/upload-artifact@v4
+        with:
+          name: scraped-club-data
+          path: output/
+
