@@ -27,7 +27,7 @@ jobs:
         run: python scrape.py
 
       - name: List output files
-        run: ls -la output  # Debug tambahan
+        run: ls -la dataset  # Debug tambahan
 
       - name: Upload scraped data
         uses: actions/upload-artifact@v4
