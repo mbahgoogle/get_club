@@ -235,4 +235,14 @@ def save_to_csv(data: List[Dict[str, str]], club_name: str):
             writer.writerow([
                 player["name"], player["status"], player["profile_url"], player["image_url"],
                 player["jersey_name"], player["jersey_number"], player["nation"], player["nation_code"],
+                player["club"], player["place_of_birth"], player["full_name"], player["position"],
+                player["height"], player["date_of_birth"], player["appearances"], player["goals"],
+                player["assists"], player["own_goals"], player["yellow_cards"], player["second_yellow"],
+                player["red_cards"], player["sub_on"], player["sub_off"], player["minutes_played"]
+            ])
+
+        for player in data:
+            writer.writerow([
+                player["name"], player["status"], player["profile_url"], player["image_url"],
+                player["jersey_name"], player["jersey_number"], player["nation"], player["nation_code"],
                 player["
